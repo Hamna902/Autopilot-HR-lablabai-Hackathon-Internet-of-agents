@@ -2,87 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AutoPilot CRM Design System - Professional SaaS Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core background and text */
+    --background: 220 13% 9%;
+    --foreground: 220 9% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card and surface colors */
+    --card: 220 13% 11%;
+    --card-foreground: 220 9% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover colors */
+    --popover: 220 13% 11%;
+    --popover-foreground: 220 9% 96%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary brand colors - Professional blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 13% 9%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary colors */
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 9% 96%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted colors for subtle elements */
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors for highlights */
+    --accent: 220 13% 15%;
+    --accent-foreground: 220 9% 96%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success color for positive metrics */
+    --success: 142 76% 36%;
+    --success-foreground: 220 13% 9%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warning color */
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 13% 9%;
 
-    --radius: 0.5rem;
+    /* Destructive/error colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 9% 96%;
 
-    --sidebar-background: 0 0% 98%;
+    /* Border and input colors */
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 217 91% 60%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Design system radius */
+    --radius: 0.75rem;
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Sidebar colors */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -92,6 +65,27 @@ All colors MUST be HSL.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .light {
+    /* Light mode overrides for AutoPilot CRM */
+    --background: 220 9% 98%;
+    --foreground: 220 13% 9%;
+    --card: 220 9% 100%;
+    --card-foreground: 220 13% 9%;
+    --popover: 220 9% 100%;
+    --popover-foreground: 220 13% 9%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 9% 98%;
+    --secondary: 220 9% 95%;
+    --secondary-foreground: 220 13% 9%;
+    --muted: 220 9% 95%;
+    --muted-foreground: 220 9% 40%;
+    --accent: 220 9% 95%;
+    --accent-foreground: 220 13% 9%;
+    --border: 220 13% 85%;
+    --input: 220 13% 95%;
+    --ring: 217 91% 60%;
+  }
 }
 
 @layer base {
@@ -100,6 +94,72 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* KPI Card Animation */
+  .kpi-card {
+    @apply bg-gradient-to-br from-card to-card/80 backdrop-blur-sm border border-border/50;
+    box-shadow: 0 4px 16px hsl(220 13% 5% / 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .kpi-card:hover {
+    box-shadow: 0 8px 32px hsl(220 13% 5% / 0.6);
+    transform: translateY(-2px);
+  }
+
+  /* Chart container styling */
+  .chart-container {
+    @apply bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg;
+    box-shadow: 0 4px 16px hsl(220 13% 5% / 0.4);
+  }
+
+  /* Professional button variants */
+  .btn-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.15);
+    @apply text-primary-foreground font-medium;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-gradient:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 50px hsl(var(--primary) / 0.25);
+  }
+
+  /* Activity feed styling */
+  .activity-item {
+    @apply border-l-2 border-primary/20 pl-4 relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .activity-item::before {
+    content: '';
+    @apply absolute -left-2 top-2 w-4 h-4 bg-primary rounded-full;
+    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.2);
+  }
+
+  .activity-item:hover {
+    @apply border-l-primary/50;
   }
 }
