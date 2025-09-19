@@ -32,7 +32,7 @@ const Login = () => {
       } else {
         toast({
           title: "Success",
-          description: "Welcome back to AutoPilot CRM!",
+          description: "Welcome back to Agent Nexus!",
         });
       }
     } catch (error) {
@@ -51,14 +51,14 @@ const Login = () => {
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold tracking-tight text-foreground">
-            AutoPilot CRM
+            Agent Nexus
           </h1>
           <p className="text-muted-foreground mt-2">Admin Portal</p>
         </div>
 
         <Card className="border-border/50 shadow-lg">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-2xl font-semibold">Welcome Back to AutoPilot CRM</CardTitle>
+            <CardTitle className="text-2xl font-semibold">Welcome Back to Agent Nexus</CardTitle>
             <CardDescription>
               Enter your credentials to access your admin dashboard
             </CardDescription>

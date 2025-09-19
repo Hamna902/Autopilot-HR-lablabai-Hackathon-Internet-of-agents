@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -32,11 +34,56 @@ export default function Campaigns() {
     audience: "",
     goal: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Campaign created:", formData);
+    setIsSubmitting(true);
+
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      if (!user) {
+        toast({
+          variant: "destructive",
+          title: "Authentication required",
+          description: "Please sign in to create campaigns.",
+        });
+        return;
+      }
+
+      const { error } = await (supabase as any)
+        .from('campaigns')
+        .insert({
+          campaign_name: formData.name,
+          target_audience: formData.audience,
+          campaign_goal: formData.goal,
+          user_id: user.id
+        });
+
+      if (error) {
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: error.message,
+        });
+      } else {
+        toast({
+          title: "Campaign created!",
+          description: "Agents are standing by.",
+        });
+        setFormData({ name: "", audience: "", goal: "" });
+      }
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "An unexpected error occurred.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -92,8 +139,8 @@ export default function Campaigns() {
                 />
               </div>
 
-              <Button type="submit" className="w-full btn-gradient">
-                Launch Campaign
+              <Button type="submit" className="w-full btn-gradient" disabled={isSubmitting}>
+                {isSubmitting ? "Creating..." : "Launch Campaign"}
               </Button>
             </form>
           </CardContent>

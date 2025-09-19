@@ -10,7 +10,7 @@ export default function Dashboard() {
       <div>
         <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
         <p className="text-muted-foreground mt-2">
-          Welcome to AutoPilot CRM - Your AI-powered sales automation center
+          Welcome to Agent Nexus - Your AI-powered sales automation center
         </p>
       </div>
 

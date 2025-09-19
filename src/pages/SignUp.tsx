@@ -67,7 +67,7 @@ const SignUp = () => {
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold tracking-tight text-foreground">
-            AutoPilot CRM
+            Agent Nexus
           </h1>
           <p className="text-muted-foreground mt-2">Admin Portal</p>
         </div>
@@ -76,7 +76,7 @@ const SignUp = () => {
           <CardHeader className="space-y-1">
             <CardTitle className="text-2xl font-semibold">Create Your Admin Account</CardTitle>
             <CardDescription>
-              Get started with AutoPilot CRM by creating your admin account
+              Get started with Agent Nexus by creating your admin account
             </CardDescription>
           </CardHeader>
           <CardContent>
