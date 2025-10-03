@@ -1,60 +1,109 @@
-The SMB Sales & Marketing Squad: Multi-Agent Automation Dashboard 🚀
-Project Overview
-Theme: Internet of Agents (Multi-Agent Workflow Automation for SMB Sales & Marketing)
+# AgentFlow SMB – AI Sales Automation with Lovable  
 
-This project delivers an intelligent, affordable, and fully automated sales and marketing system for Small to Medium Businesses (SMBs). It utilizes a team of specialized AI agents, all orchestrated via a simple Human-in-the-Loop dashboard built with Lovable AI.
+🚀 **Affordable, end-to-end AI-powered sales & marketing automation for SMBs**  
 
-The Multi-Agent Workflow
-Lead Generation Agent: Uses Apify for targeted data scraping and Apollo API for lead enrichment.
+[🌐 Demo Link](https://lablab.ai/event/internet-of-agents/agent-nexus/agentflow-smb-ai-sales-automation-with-lovable?_gl=1*1uzw5ru*_up*MQ..*_ga*NDYwODc4NTAuMTc1ODQ0NTgyMw..*_ga_0DKXC1L0Y7*czE3NTg0NDU4MjMkbzEkZzAkdDE3NTg0NDU4MjMkajYwJGwwJGg4MTMwNDIxNDE) |  
+[📑 Slides](https://storage.googleapis.com/lablab-static-eu/presentations/submissions/cmfs9d11l0000356xswyo23s7/cmfs9d11l0000356xswyo23s7-1758379883367_ki24fx0b5d.pdf) |  
+[💻 GitHub Repo](https://github.com/Hamna902/Autopilot-HR-lablabai-Hackathon-Internet-of-agents)  
 
-Marketing Content Agent: Applies AI/ML to generate personalized emails and messages.
+---
 
-Sales Outreach Agent: Executes campaigns via Gmail API and logs all performance data to Google Sheets.
+## 📌 Problem  
+Small to Medium Businesses (SMBs) face challenges in:  
+- Generating **personalized, scalable outreach** with limited resources.  
+- Using existing tools that are often too **complex** and not optimized for lean teams.  
+- Lacking **autonomous intelligence** to dynamically execute sales and marketing campaigns.  
 
-💻 Technologies Used
-Category	Tools & Frameworks
-Frontend/UI	Lovable AI, React, Vite, TypeScript, Tailwind CSS, shadcn-ui
-Agent Backend	AI/ML (LLM Integration), Python/Node.js (for agent logic)
-APIs & Data	Apollo API, Apify, Google Sheets, Gmail
-Deployment	Vercel (Frontend & Serverless Functions)
+---
 
-Export to Sheets
-⚙️ Quick Start (Local Development)
-This project requires Node.js and npm installed.
+## 💡 Solution: The SMB Sales & Marketing Squad  
+We built a **multi-agent system** designed for SMBs that handles the entire sales pipeline with minimal technical overhead.  
 
-Clone the Repository:
+### 🔗 Workflow  
+1. **Lead Generation Agent**  
+   - Uses **Apify** for targeted data collection.  
+   - Enriches & verifies leads via **Apollo API**.  
 
-Bash
+2. **Marketing Content Agent**  
+   - Generates **hyper-personalized content** with AI/ML.  
+   - Ensures adaptability to different niches and customer segments.  
 
-git clone <YOUR_GIT_URL>
-cd <YOUR_PROJECT_NAME>
-Install Dependencies:
+3. **Sales Outreach Agent**  
+   - Executes outreach campaigns via **Gmail**.  
+   - Logs all activities into a **Google Sheet** (acting as a lightweight CRM).  
 
-Bash
+4. **Unified Dashboard (Lovable AI)**  
+   - Built on **Lovable AI’s free tier**.  
+   - Provides **human-in-the-loop oversight** for:  
+     - Content approval  
+     - Campaign monitoring  
 
-npm i
-Start the Development Server:
+---
 
-Bash
+## 🎯 Target Audience  
+- Non-technical **SMB owners**  
+- **Solo-preneurs** running their own sales/marketing  
+- Small **sales/marketing teams** seeking automation without heavy investment  
 
-npm run dev
-Backend Environment: Ensure your environment variables (APOLLO_API_KEY, LLM_API_KEY, etc.) are configured locally to run the backend agents and API calls.
+---
 
- Deployment (Hackathon Submission)
-Frontend & API Deployment on Vercel
-The frontend (Lovable AI project) and the backend API endpoints (as Serverless Functions) are deployed together on Vercel.
+## 🌟 Key Features & Benefits  
+✅ **Affordable & Accessible** – Built on free/low-cost services (Lovable AI, Apollo, Apify, Google).  
+✅ **Human-in-the-loop** – Oversight ensures quality control without sacrificing automation.  
+✅ **All-in-One Workflow** – Lead generation → Content → Outreach → CRM logging.  
+✅ **Scalable & Adaptive** – Works for different business sizes and industries.  
+✅ **User-Friendly Dashboard** – Simple UI for non-technical users.  
 
-Vercel Connection: The project is deployed via a direct connection to this GitHub repository.
+---
 
-Secrets: All sensitive API keys are securely stored as Environment Variables in the Vercel dashboard.
+## 🛠️ Tech Stack  
+- **Agents**: Custom-built multi-agent workflow  
+- **Data Collection**: [Apify](https://apify.com)  
+- **Lead Enrichment**: [Apollo API](https://apollo.io)  
+- **Content Generation**: AI/ML models  
+- **Campaign Execution**: Gmail API  
+- **CRM/Database**: Google Sheets  
+- **Dashboard**: [Lovable AI](https://lovable.ai)  
 
-👉 LIVE DEMO URL:
-https://<YOUR-PROJECT-NAME>.vercel.app
+---
 
-(This is the link to be shared for evaluation.)
+## 📽️ Demo & Resources  
+- 🎥 [Demo Link](https://lablab.ai/event/internet-of-agents/agent-nexus/agentflow-smb-ai-sales-automation-with-lovable?_gl=1*1uzw5ru*_up*MQ..*_ga*NDYwODc4NTAuMTc1ODQ0NTgyMw..*_ga_0DKXC1L0Y7*czE3NTg0NDU4MjMkbzEkZzAkdDE3NTg0NDU4MjMkajYwJGwwJGg4MTMwNDIxNDE)  
+- 📑 [Slides](https://storage.googleapis.com/lablab-static-eu/presentations/submissions/cmfs9d11l0000356xswyo23s7/cmfs9d11l0000356xswyo23s7-1758379883367_ki24fx0b5d.pdf)  
+- 💻 [GitHub Repo](https://github.com/Hamna902/Autopilot-HR-lablabai-Hackathon-Internet-of-agents)  
 
-🖋️ Editing and Contribution
-Method	Description
-Lovable AI	Visit the Lovable Project URL and prompt for changes. Changes are automatically committed here.
-Preferred IDE	Clone the repo, make changes, and push. Changes are reflected in Lovable and trigger Vercel deployments.
-GitHub Codespaces	Use the "Code" button to launch a Codespace for an instant cloud development environment.
+---
+
+## 🚀 Getting Started  
+
+### Prerequisites  
+- Node.js or Python environment (depending on your setup)  
+- API keys for:  
+  - Apify  
+  - Apollo  
+  - Gmail API  
+- Google account with Sheets access  
+
+### Installation  
+```
+# Clone the repo
+git clone https://github.com/Hamna902/Autopilot-HR-lablabai-Hackathon-Internet-of-agents.git
+
+# Navigate to project directory
+cd Autopilot-HR-lablabai-Hackathon-Internet-of-agents
+
+# Install dependencies
+npm install   # or pip install -r requirements.txt (depending on project setup)
+```
+## Running the Agents
+```
+# Start the workflow
+npm start   # or python main.py
+```
+## 🤝 Contributing
+
+- Hamna Nazar(me)
+- Muhammad Umair
+- Uzma Akhter
+- Momina Noor
+- Saboor Ahmed
