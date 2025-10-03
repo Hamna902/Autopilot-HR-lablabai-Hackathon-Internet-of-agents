@@ -1,6 +1,7 @@
 # AgentFlow SMB – AI Sales Automation with Lovable  
 
 🚀 **Affordable, end-to-end AI-powered sales & marketing automation for SMBs**  
+*A Hackathon Project in Lablabai Internet of agents*
 
 [🌐 Demo Link](https://lablab.ai/event/internet-of-agents/agent-nexus/agentflow-smb-ai-sales-automation-with-lovable?_gl=1*1uzw5ru*_up*MQ..*_ga*NDYwODc4NTAuMTc1ODQ0NTgyMw..*_ga_0DKXC1L0Y7*czE3NTg0NDU4MjMkbzEkZzAkdDE3NTg0NDU4MjMkajYwJGwwJGg4MTMwNDIxNDE) |  
 [📑 Slides](https://storage.googleapis.com/lablab-static-eu/presentations/submissions/cmfs9d11l0000356xswyo23s7/cmfs9d11l0000356xswyo23s7-1758379883367_ki24fx0b5d.pdf) |  
